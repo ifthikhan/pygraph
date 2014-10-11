@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+import logging
 from collections import defaultdict
 from . import bfs, logger
+
+
+logger = logging.getLogger(__name__)
 
 
 def find_path(traversed_path, start, end):

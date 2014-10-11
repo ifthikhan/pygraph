@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-from . import logger
+import logging
 from collections import defaultdict, deque, namedtuple
 from itertools import ifilterfalse, chain
-from . import Edgenode, Graph, WeightedGraph
 
 
+logger = logging.getLogger(__name__)
 _default_func = lambda *v: v
 
 

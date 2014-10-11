@@ -2,6 +2,9 @@
 # encoding: utf-8
 
 import unittest
+from pygraph import primms_minimum_spanning_tree
+from pygraph import WeightedGraph
+
 
 class Fixtures(object):
 
@@ -54,3 +57,6 @@ class TestMinimumSpanningTree(unittest.TestCase, Fixtures):
                          7: []}
         tree = self.min_span_tree(self.g, 1)
         self.assertEqual(tree, expected_tree)
+
+if __name__ == '__main__':
+    unittest.main()

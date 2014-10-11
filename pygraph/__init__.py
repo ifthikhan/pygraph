@@ -2,11 +2,11 @@
 # encoding: utf-8
 
 import logging
-from datastructures import EdgeNode, Graph, WeightedGraph
-from traversal import bfs, dfs
+from .datastructures import EdgeNode, Graph, WeightedGraph
+from .weighted import primms_minimum_spanning_tree
+from .traversal import bfs, dfs
 
 
-logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
 

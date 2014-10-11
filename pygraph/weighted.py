@@ -5,9 +5,13 @@
 Module with all the algorithms dealing with weighted graphs.
 """
 
+import logging
 from collections import defaultdict
 from heapq import heapify, heappop, heappush
-from . import WeightedGraph
+from .datastructures import WeightedGraph
+
+
+logger = logging.getLogger(__name__)
 
 
 def primms_minimum_spanning_tree(graph, start):
